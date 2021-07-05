@@ -57,6 +57,8 @@ Desktop Version:
 
 At first I tried to make the background image an HTML tag, but had a few issues positioning the content on top. So I decided to make the background image apart of the body's background image. The image repeated a little bit, but after researching background-size property on MDN, I was able to fix this problem.
 
+I added a width on the grid container so that everything doesn't touch the sides
+
 
 ### Continued development
 
