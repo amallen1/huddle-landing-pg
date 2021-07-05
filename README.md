@@ -47,9 +47,15 @@ Desktop Version:
 
 ### Built with
 
+- HTML
+- SCSS
+- Mobile first workflow
+
 
 
 ### What I learned
+
+At first I tried to make the background image an HTML tag, but had a few issues positioning the content on top. So I decided to make the background image apart of the body's background image. The image repeated a little bit, but after researching background-size property on MDN, I was able to fix this problem.
 
 
 ### Continued development
@@ -57,6 +63,8 @@ Desktop Version:
 ~~
 
 ### Useful resources
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
 
 
 
