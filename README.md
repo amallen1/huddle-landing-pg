@@ -59,14 +59,27 @@ At first I tried to make the background image an HTML tag, but had a few issues 
 
 I added a width on the grid container so that everything doesn't touch the sides
 
+I also ran into a small issue when it came to styling the call to action "register button" because I made it a link and tried to give a height and width but it didn't display. After researching, I remembered that HTML link tags are inline elements, so they only take up as much width as necessary. Setting the link's display property to block solved my problem.
 
+I also learned while creating the box shadow for the call to action button that the offset x affects the shadow to the left and right of the element and the y offset affects the top and bottom.
 ### Continued development
 
 ~~
 
 ### Useful resources
 
+Solution to background img issue
 - https://developer.mozilla.org/en-US/docs/Web/CSS/background-size
+
+Solution to link height/width issue
+- https://stackoverflow.com/questions/5990223/how-to-set-alink-height-width-with-css
+- https://www.w3schools.com/html/html_blocks.asp
+
+Solution to box shadow issue
+- https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
+- https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
+
+
 
 
 

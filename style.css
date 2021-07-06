@@ -17,10 +17,7 @@
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   font-family: "Poppins", sans-serif;
 }
 
@@ -39,21 +36,75 @@ body {
   margin: 1em auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 1fr 1fr auto;
-      grid-template-rows: auto 1fr 1fr auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+}
+
+.grid-container .mobile-logo {
+  width: 125px;
+  padding-top: 1em;
 }
 
 .main {
-  padding-top: 3.25em;
+  padding-top: 3.5em;
 }
 
-.illustration {
+.main .illustration {
   width: 100%;
 }
 
-.mobile-logo {
-  width: 150px;
-  padding-top: 1em;
+.sidebar {
+  color: white;
+  text-align: center;
+}
+
+.sidebar .heading {
+  font-weight: 600;
+  margin-bottom: 0.75em;
+}
+
+.sidebar .desc {
+  font-weight: 400;
+  margin-bottom: 2em;
+}
+
+.sidebar .register-btn {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  text-decoration: none;
+  background: white;
+  padding: 0.75em 1em;
+  border-radius: 5em;
+  font-weight: 400;
+  font-size: 0.825rem;
+  color: #674baf;
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+}
+
+.soc-list {
+  width: 50%;
+  margin: 1em auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.soc-list li {
+  list-style-type: none;
+  color: #fff;
+}
+
+.soc-list li i {
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0.5em;
+  width: 30px;
+  height: 30px;
+  text-align: center;
 }
 
 @media (min-width: 720px) {
