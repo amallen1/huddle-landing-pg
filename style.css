@@ -9,10 +9,11 @@
 footer .attribution {
   font-size: 11px;
   text-align: center;
+  color: #fff;
 }
 
 footer .attribution a {
-  color: #3e52a3;
+  color: #e882e8;
 }
 
 h1,
@@ -60,7 +61,7 @@ body {
 
 .sidebar .heading {
   font-weight: 600;
-  margin-bottom: 0.75em;
+  margin: 2.5em 0 .75em 0;
 }
 
 .sidebar .desc {

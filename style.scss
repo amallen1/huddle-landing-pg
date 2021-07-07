@@ -16,9 +16,10 @@ footer {
   .attribution {
     font-size: 11px;
     text-align: center;
+    color: #fff;
   }
   .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: $soft-magenta;
   }
 }
 
@@ -64,7 +65,7 @@ body {
 
   .heading {
     font-weight: 600;
-    margin-bottom: 0.75em;
+    margin: 2.5em 0 .75em 0;
   }
 
   .desc {
