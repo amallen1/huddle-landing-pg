@@ -39,8 +39,8 @@ Desktop Version:
 
 ### Links
 
-- Solution URL: []
-- Live Site URL: []
+- Solution URL: [https://github.com/amallen1/huddle-landing-pg]
+- Live Site URL: [https://blissful-goodall-f6a9dd.netlify.app/]
 
 
 ## My process
@@ -49,8 +49,9 @@ Desktop Version:
 
 - HTML
 - SCSS
+- CSS Grid
+- Flexbox
 - Mobile first workflow
-
 
 
 ### What I learned
@@ -79,9 +80,8 @@ Solution to box shadow issue
 - https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 - https://www.w3schools.com/cssref/css3_pr_box-shadow.asp
 
-
-
-
+Review of CSS Grid
+- https://www.youtube.com/watch?v=CC2HkBZuReY&t=72s&ab_channel=ThuNghiem
 
 ## Author
 - Frontend Mentor - [@amallen1](https://www.frontendmentor.io/profile/amallen1)

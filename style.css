@@ -6,12 +6,12 @@
           box-sizing: border-box;
 }
 
-.attribution {
+footer .attribution {
   font-size: 11px;
   text-align: center;
 }
 
-.attribution a {
+footer .attribution a {
   color: #3e52a3;
 }
 
@@ -28,10 +28,10 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100vw;
+  height: 100vh;
 }
 
 .grid-container {
-  height: 100vh;
   width: 80%;
   margin: 1em auto;
   display: -ms-grid;
@@ -40,7 +40,7 @@ body {
       grid-template-rows: auto auto auto auto;
 }
 
-.grid-container .mobile-logo {
+.grid-container .logo {
   width: 125px;
   padding-top: 1em;
 }
@@ -85,7 +85,7 @@ body {
 
 .soc-list {
   width: 50%;
-  margin: 1em auto;
+  margin: 2em auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,19 +109,19 @@ body {
 
 @media (min-width: 720px) {
   body {
-    height: 100vh;
-    width: 100vw;
-    font-family: "Open Sans", sans-serif;
-    background-color: #674baf;
     background-image: url(/images/bg-desktop.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .grid-container {
+    width: 90%;
     -ms-grid-columns: (1fr)[12];
         grid-template-columns: repeat(12, 1fr);
     -ms-grid-rows: auto 1fr auto;
         grid-template-rows: auto 1fr auto;
+  }
+  .grid-container .logo {
+    width: 200px;
   }
   .navigation {
     -ms-grid-column: 1;
@@ -132,6 +132,11 @@ body {
     -ms-grid-column: 1;
     -ms-grid-column-span: 7;
     grid-column: 1 / span 7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   .sidebar {
     -ms-grid-column: 8;

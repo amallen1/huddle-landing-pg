@@ -12,12 +12,14 @@ $soft-magenta: hsl(300, 69%, 71%);
   box-sizing: border-box;
 }
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
+footer {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
 }
 
 h1,
@@ -33,16 +35,16 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100vw;
+  height: 100vh;
 }
 
 .grid-container {
-  height: 100vh;
   width: 80%;
   margin: 1em auto;
   display: grid;
   grid-template-rows: auto auto auto auto;
 
-  .mobile-logo {
+  .logo {
     width: 125px;
     padding-top: 1em;
   }
@@ -87,7 +89,7 @@ body {
 
 .soc-list {
   width: 50%;
-  margin: 1em auto;
+  margin: 2em auto;
   display: flex;
   justify-content: space-around;
 
@@ -108,17 +110,19 @@ body {
 
 @media (min-width: 720px) {
   body {
-    height: 100vh;
-    width: 100vw;
-    font-family: "Open Sans", sans-serif;
-    background-color: $violet;
     background-image: url(/images/bg-desktop.svg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
   }
   .grid-container {
+    width: 90%;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: auto 1fr auto;
+
+    .logo {
+      width: 200px;
+      //padding-top: 1.5em;
+    }
   }
 
   .navigation {
@@ -127,6 +131,8 @@ body {
 
   .main {
     grid-column: 1 / span 7;
+    display: flex;
+    align-self: center;
   }
 
   .sidebar {
