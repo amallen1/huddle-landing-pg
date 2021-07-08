@@ -94,6 +94,10 @@ li {
   list-style-type: none;
   color: #fff;
 
+  &:active {
+    color: $soft-magenta;
+  }
+
   a {
     border-radius: 50%;
     border: 1px solid #fff;
@@ -105,12 +109,12 @@ li {
     align-items: center;
     text-decoration: none;
 
-    i {
-      transform: translate(0%, 75%);
-    }
-
     &:active {
       color: $soft-magenta;
+    }
+
+    i {
+      transform: translate(0%, 75%);
     }
   }
 }
