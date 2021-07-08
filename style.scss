@@ -12,17 +12,6 @@ $soft-magenta: hsl(300, 69%, 71%);
   box-sizing: border-box;
 }
 
-footer {
-  .attribution {
-    font-size: 11px;
-    text-align: center;
-    color: #fff;
-  }
-  .attribution a {
-    color: $soft-magenta;
-  }
-}
-
 h1,
 h2,
 h3 {
@@ -65,7 +54,7 @@ body {
 
   .heading {
     font-weight: 600;
-    margin: 2.5em 0 .75em 0;
+    margin: 2.5em 0 0.75em 0;
   }
 
   .desc {
@@ -85,6 +74,12 @@ body {
     font-size: 0.825rem;
     color: $violet;
     box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+
+    &:active {
+      background: $soft-magenta;
+      color: white;
+    }
   }
 }
 
@@ -93,30 +88,51 @@ body {
   margin: 2em auto;
   display: flex;
   justify-content: space-around;
+}
 
-  li {
-    list-style-type: none;
+li {
+  list-style-type: none;
+  color: #fff;
+
+  a {
+    border-radius: 50%;
+    border: 1px solid #fff;
     color: #fff;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    align-items: center;
+    text-decoration: none;
 
     i {
-      border-radius: 50%;
-      border: 1px solid #fff;
-      padding: 0.5em;
-      width: 30px;
-      height: 30px;
-      text-align: center;
+      transform: translate(0%, 75%);
+    }
+
+    &:active {
+      color: $soft-magenta;
     }
   }
 }
 
-@media (min-width: 720px) {
+footer {
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: #fff;
+  }
+  .attribution a {
+    color: $soft-magenta;
+  }
+}
 
+@media (min-width: 720px) {
   body {
     height: 100vh;
     background-image: url(/images/bg-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    max-width:100%;
+    max-width: 100%;
   }
   .grid-container {
     width: 90%;
@@ -147,9 +163,37 @@ body {
 
   .sidebar {
     grid-column: 8 / span 5;
+    text-align: left;
+    margin: 4em 0 0 0.5em;
+
+    .heading {
+      font-size: 2rem;
+    }
+
+    .desc {
+      line-height: 1.6;
+    }
+
+    .register-btn {
+      margin: 0;
+      text-align: center;
+      width: 200px;
+      padding: 1em 1em;
+      box-shadow: 1px 3px 4px 2px rgba(0, 0, 0, 0.3);
+      font-size: 1rem;
+    }
   }
 
   .footer {
     grid-column: 1 / span 12;
+
+    .soc-list {
+      justify-content: flex-end;
+      width: 100%;
+
+      .soc-item {
+        margin-left: 1em;
+      }
+    }
   }
 }
